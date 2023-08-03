@@ -81,7 +81,7 @@
   }
 #endif
 
-  CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:@{@"event":@"opened"}];
+  CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:@{@"event":@"opened" url}];
   [pluginResult setKeepCallback:[NSNumber numberWithBool:YES]];
   [self.commandDelegate sendPluginResult:pluginResult callbackId:self.callbackId];
 }
